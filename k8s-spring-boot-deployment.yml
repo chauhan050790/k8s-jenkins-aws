@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: 014610777298.dkr.ecr.us-east-1.amazonaws.com/eks-project:eks-project-demo:latest
+          image: 014610777298.dkr.ecr.us-east-1.amazonaws.com/eks-project:latest
           ports:
             - containerPort: 8080
           env:
