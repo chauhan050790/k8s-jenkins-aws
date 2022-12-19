@@ -13,7 +13,7 @@ spec:
         app: eks-project
     spec:
       containers:
-        restartPolicy: Always
+      restartPolicy: Always
         - name: springboot 
           image: 014610777298.dkr.ecr.us-east-1.amazonaws.com/eks-project:eks-project-demo
           ports:
