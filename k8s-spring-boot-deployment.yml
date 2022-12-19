@@ -18,6 +18,7 @@ spec:
       labels:
         app: eks-project
     spec:
+      restartPolicy: Always
       containers:
         - name: springboot 
           image: 014610777298.dkr.ecr.us-east-1.amazonaws.com/eks-project:eks-project-demo
