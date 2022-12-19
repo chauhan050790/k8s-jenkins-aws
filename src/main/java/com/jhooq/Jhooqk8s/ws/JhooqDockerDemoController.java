@@ -8,7 +8,7 @@ public class JhooqDockerDemoController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello - Jhooq-k8s i Have updated the message Devops work hhhhhhhhhhhhhh work width JJ new data of new plan";
+        return "now vipin chauhan is Devops Engineer";
         
     }
     
