@@ -13,7 +13,7 @@ spec:
         app: eks-project
     spec:
       containers:
-        - name: springboot
+        - name: springboot 
           image: 014610777298.dkr.ecr.us-east-1.amazonaws.com/eks-project:latest
           ports:
             - containerPort: 8080
