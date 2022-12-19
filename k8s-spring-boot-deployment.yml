@@ -4,6 +4,7 @@ metadata:
   name: eks-project
 spec:
   replicas: 4
+  minReadySeconds: 5
   strategy:
     type: RollingUpdate
     rollingUpdate:
