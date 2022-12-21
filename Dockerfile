@@ -1,7 +1,3 @@
 FROM openjdk:8-jdk-alpine
-COPY ./build/libs/*.jar app.jar
-
-RUN mkdir destination-dir-for-add
-ADD sample.tar.gz /destination-dir-for-add
-
+add ./build/libs/*.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
