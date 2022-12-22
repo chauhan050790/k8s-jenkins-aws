@@ -1,3 +1,3 @@
 FROM openjdk:8-jdk-alpine
-COPY /home/runner/work/k8s-jenkins-aws/k8s-jenkins-aws/gradlew build/*.jar app.jar
+COPY gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1/*.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
