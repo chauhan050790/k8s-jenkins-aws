@@ -8,7 +8,7 @@ public class JhooqDockerDemoController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "now changes update 11:44 PM new data  new plan";
+        return "now changes update 11:44 PM new data  new plan github work";
         
     }
     
