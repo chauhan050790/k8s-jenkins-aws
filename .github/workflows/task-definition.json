@@ -20,6 +20,11 @@
           "hostPort": 8080,
           "protocol": "tcp",
           "containerPort": 8080
+        },
+        {
+          "hostPort": 80,
+          "protocol": "tcp",
+          "containerPort": 80
         }
       ],
       "command": [],
@@ -37,7 +42,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "014610777298.dkr.ecr.us-east-1.amazonaws.com/eks-project",
+      "image": "014610777298.dkr.ecr.us-east-1.amazonaws.com/eks-project:cf3764e75d6309dac3186e24eb89bbc62c2c92fb",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -59,12 +64,12 @@
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": null,
+  "taskRoleArn": "arn:aws:iam::014610777298:role/ecsTaskExecutionRole",
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:014610777298:task-definition/ecs-deploy:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:014610777298:task-definition/ecs-deploy:4",
   "family": "ecs-deploy",
   "requiresAttributes": [
     {
@@ -95,6 +100,12 @@
       "targetId": null,
       "targetType": null,
       "value": null,
+      "name": "com.amazonaws.ecs.capability.task-iam-role"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
       "name": "ecs.capability.execution-role-ecr-pull"
     },
     {
@@ -120,7 +131,7 @@
     "cpuArchitecture": null
   },
   "cpu": "256",
-  "revision": 1,
+  "revision": 4,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
