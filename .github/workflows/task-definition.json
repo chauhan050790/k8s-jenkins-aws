@@ -69,7 +69,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:014610777298:task-definition/ecs-deploy:9",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:014610777298:task-definition/ecs-deploy:16",
   "family": "ecs-deploy",
   "requiresAttributes": [
     {
